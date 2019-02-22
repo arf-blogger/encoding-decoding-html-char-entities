@@ -1,0 +1,58 @@
+$c-green: #47CF73;
+$c-green-light: lighten($c-green, 20%);
+$c-green-dark: darken($c-green, 15%);
+$c-blue: #0EBEFF;
+$c-blue-light: lighten($c-blue, 20%);
+$c-blue-dark: darken($c-blue, 15%);
+$c-red: #FF4444;
+$c-red-light: lighten($c-red, 20%);
+$c-red-dark: darken($c-red, 15%);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  height: 10%;
+  display: flex;
+  min-height: 2rem;  
+  button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+  }
+}
+
+#encode {
+  background: $c-green;
+  &:hover {
+    background: $c-green-dark;
+  }
+}  
+#decode {
+  background: $c-blue;
+  &:hover {
+    background: $c-blue-dark;
+  }
+}
+
+textarea {
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  line-height: 1.6;
+  background: #111;
+  color: $c-red;
+  box-sizing: border-box;
+  height: 45%;
+  font-family: "Andale Mono", monospace;
+  white-space: pre;
+  &::selection {
+    background: transparentize($c-red-dark, 0.8);
+  }
+}

@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  height: 10%;
+  display: flex;
+  min-height: 2rem;
+}
+div button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+#encode {
+  background: #47CF73;
+}
+#encode:hover {
+  background: #2aa050;
+}
+
+#decode {
+  background: #0EBEFF;
+}
+#decode:hover {
+  background: #008dc1;
+}
+
+textarea {
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  line-height: 1.6;
+  background: #111;
+  color: #FF4444;
+  box-sizing: border-box;
+  height: 45%;
+  font-family: "Andale Mono", monospace;
+  white-space: pre;
+}
+textarea::-moz-selection {
+  background: rgba(247, 0, 0, 0.2);
+}
+textarea::selection {
+  background: rgba(247, 0, 0, 0.2);
+}
